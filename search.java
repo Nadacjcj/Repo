@@ -19,6 +19,11 @@ public class Search {
     }
 
     public static void binarySearchCheckIfFound(int[] array, int target) {
+        if(array == null || array.length == 0) {
+            System.out.println("Cant search in an array of length zero");
+            return;
+        }
+
         Arrays.sort(array);
 
         int left = 0;
